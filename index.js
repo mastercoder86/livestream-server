@@ -4,6 +4,7 @@ const io = new Server(8000,{
 });
 const socketIdToEmail = new Map();
 const emailToSocketId = new Map();
+console.log("hello world")
 io.on('connection',(socket)=>{
     console.log("Socket connected",socket.id);
 
